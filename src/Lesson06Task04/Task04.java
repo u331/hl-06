@@ -13,4 +13,18 @@ public static void main(String[] args) {
         }*/
 
 public class Task04 {
+
+    public static void main(String[] args) {
+        try {
+            int a = 0;
+            int b = 4 / a;
+        }
+        /*catch (Exception e) {
+            e.printStackTrace();
+        }*/
+         catch (ArithmeticException e) {  //"ArithmeticException" is the grandchild of "Exception"
+            e.printStackTrace();
+        }
+    }
+
 }
