@@ -60,11 +60,9 @@ public class Example {
 
     @Override
     public int hashCode() {
-//In my opinion, hashCode is a useful feature that allows you to distinguish twin objects,
-// does not need to override in this task.
-// Overriding deprives the program of some useful functionality.
-// But if it is nevertheless necessary, then a override can be done like this:
-        return (this.first + this.last).hashCode();
+// I've changed my opinion regarding hashCode overriding.
+// “HashCode” is not “Id” directly and serves for the purpose of content comparison, but not for finding unique values.
+        return first.hashCode() + last.hashCode();
     }
 
     public static void main(String[] args) {
